@@ -1,0 +1,58 @@
+{
+  "name": "StartWarsGraphql",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "node node_modules/react-native/local-cli/cli.js run-android",
+    "clear": "rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-*",
+    "hard-reset": "watchman watch-del-all && rm -rf node_modules && yarn install",
+    "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+    "lint": "tslint 'src/**/*.{ts,tsx}' --config .tslint.json",
+    "lint-fix": "tslint 'src/**/*.{ts,tsx}' --config .tslint.json --fix",
+    "start": "react-native start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.4.3",
+    "graphql": "^14.4.2",
+    "native-base": "^2.13.5",
+    "react": "16.8.6",
+    "react-apollo": "^2.5.8",
+    "react-native": "0.60.3",
+    "react-native-animatable": "^1.3.2",
+    "react-native-gesture-handler": "^1.3.0",
+    "react-navigation": "^3.12.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/runtime": "^7.5.4",
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/graphql": "^14.2.2",
+    "@types/jest": "^24.0.15",
+    "@types/react": "^16.7.18",
+    "@types/react-native": "^0.60.2",
+    "@types/react-test-renderer": "^16.8.2",
+    "babel-core": "^6.26.3",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "babel-runtime": "^6.26.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "jest": "^24.8.0",
+    "metro-react-native-babel-preset": "^0.55.0",
+    "prettier": "^1.18.2",
+    "react-native-typescript-transformer": "^1.2.12",
+    "react-test-renderer": "16.8.6",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-react": "^4.0.0",
+    "typescript": "^3.5.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
